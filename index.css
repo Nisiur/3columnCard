@@ -1,0 +1,123 @@
+/* ## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px */
+
+
+
+
+div{
+    padding: 2.8em;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: "lexend deca";
+}
+
+.sedan{
+    background:hsl(31, 77%, 52%) ;
+    border-radius: 0.5em 0.5em 0 0;
+}
+.sedan .button{
+    color:hsl(31, 77%, 52%);
+}
+.sedan .button:hover{
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.suv{
+    background:hsl(184, 100%, 22%) ;
+}
+.suv .button{
+    color: hsl(184, 100%, 22%);
+}
+.suv .button:hover{
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.lux{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.5em 0.5em;
+}
+.lux .button{
+    color: hsl(179, 100%, 13%);
+}
+.lux .button:hover{
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 10vh;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "big shoulders display";
+    margin-top: 0.8em;
+    margin-bottom: 0.2em;
+}
+
+.button{
+    background: hsl(0, 0%, 95%);
+    padding: 1em 1em;
+    display: flex;
+    justify-content: center;
+    border-radius: 2em;
+    font-weight: bold;
+    font-family: "lexend deca";
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 900px){
+    .content{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        max-width: 850px;
+    }
+    h1{
+        margin-bottom: 0.5em;
+    }
+    .sedan{
+        border-radius: 1em 0 0 1em;
+    }
+    .lux{
+        border-radius: 0 1em 1em 0;
+    }
+    .button{
+        margin: 5em 3em 0 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
